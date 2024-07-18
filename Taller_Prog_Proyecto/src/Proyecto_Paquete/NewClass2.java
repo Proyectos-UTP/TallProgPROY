@@ -4,10 +4,6 @@
  */
 package Proyecto_Paquete;
 
-/**
- *
- * @author Jemand
- */
 public class NewClass2 {
 
     /**
