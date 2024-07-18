@@ -4,7 +4,7 @@
  */
 package Proyecto_Paquete;
 
-public class NewClass2 {
+public class jsjsjsjsjsjjsjsjs {
 
     /**
      * @param args the command line arguments
