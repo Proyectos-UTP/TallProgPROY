@@ -13,9 +13,8 @@ import javax.swing.JOptionPane;
  */
 public class login extends javax.swing.JFrame {
 int xmause,ymause;
-    /**
-     * Creates new form NewJFrame
-     */
+    
+     int i=0;
     public login() {
         initComponents();
     }
@@ -230,12 +229,13 @@ int xmause,ymause;
     }//GEN-LAST:event_usuariotxtMouseClicked
 
     private void usuariotxtMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuariotxtMousePressed
-         if(usuariotxt.getText().equals("INGRESE SU USUARIO")){
+        
+        if(usuariotxt.getText().equals("INGRESE SU USUARIO")){
         usuariotxt.setText("");
         usuariotxt.setForeground(Color.black);}
 if (String.valueOf(contraseñatxt.getPassword()).isEmpty()){
         contraseñatxt.setText("********");
-contraseñatxt.setForeground(Color.gray);}
+contraseñatxt.setForeground(Color.gray);} 
     }//GEN-LAST:event_usuariotxtMousePressed
 
     private void contraseñatxtMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contraseñatxtMousePressed
@@ -246,8 +246,10 @@ if(usuariotxt.getText().isEmpty()){
 usuariotxt.setText("INGRESE SU USUARIO");
         usuariotxt.setForeground(Color.gray);}
     }//GEN-LAST:event_contraseñatxtMousePressed
-
+ 
     private void ENTRARBTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ENTRARBTNMouseClicked
+        
+        do {
         String Usuario="admin";
         String Contraseña="123";
         String Pass=new String(contraseñatxt.getPassword());
@@ -255,12 +257,21 @@ usuariotxt.setText("INGRESE SU USUARIO");
             aplicacion ap=new aplicacion();
             ap.setVisible(true);
             dispose();;
-        }else {
+        }else  if(Pass.equals("********")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");}
+       if(Pass.equals("********")&& usuariotxt.getText().equals("")){JOptionPane.showMessageDialog(this, "ingrese datos ");} 
+       if(Pass.equals("")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");}
+       else if(Pass.equals("")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");{
+       }
+       } 
+       {
             JOptionPane.showMessageDialog(this, "Usuario y/o contraseña no son validos");
-                    
-        }
+             i++;
+        }       
+        }while (i == 3);
+        if (i == 3) {JOptionPane.showMessageDialog(this, "Intentos disponibles agotados");
+        System.exit(0);
     }//GEN-LAST:event_ENTRARBTNMouseClicked
-
+    }
     private void headMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headMousePressed
         xmause=evt.getX();
         ymause=evt.getY();
