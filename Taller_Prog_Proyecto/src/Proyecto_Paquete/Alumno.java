@@ -11,6 +11,8 @@ public class Alumno {
     private int pc2;
     private int pc3;
     private int ef;
+   
+    
     
     public String getNombre() {
         return nombre;
@@ -85,9 +87,8 @@ public class Alumno {
                 "Promedio: "+this.promedio();
     }
     public double promedio(){
-         double promf1 = ((this.pc1) + (this.pc2) + (this.pc3) + (this.ef)) / 4;
-         int promf2 = (int) Math.round(promf1);
-         return promf2;
+         return ((this.pc1) + (this.pc2) + (this.pc3) + (this.ef)) / 4;
+         
     }
         
         public Alumno(String nombre, String apellido, int edad, int pc1, int pc2, int pc3, int Ef) {

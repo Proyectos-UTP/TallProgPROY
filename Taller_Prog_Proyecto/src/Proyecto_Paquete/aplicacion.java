@@ -163,9 +163,9 @@ public class aplicacion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void IMIbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IMIbuttonActionPerformed
-            JTable jt=new JTable();
+            Promecalc jt=new Promecalc();
             jt.setVisible(true);
-            dispose();;
+            
     }//GEN-LAST:event_IMIbuttonActionPerformed
 
     /**
