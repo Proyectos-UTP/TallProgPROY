@@ -44,6 +44,7 @@ int xmause,ymause;
         contraseñatxt = new javax.swing.JPasswordField();
         ENTRARBTN = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -53,10 +54,8 @@ int xmause,ymause;
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\USUARIO\\Documents\\NetBeansProjects\\login2\\src\\imagenes\\193318.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/193318.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 430, 190));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\USUARIO\\Downloads\\city.png")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 280, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -201,6 +200,9 @@ int xmause,ymause;
 
         jPanel1.add(ENTRARBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, -1, 40));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/city.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, -1, 470));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -222,31 +224,6 @@ int xmause,ymause;
     private void contraseñatxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contraseñatxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_contraseñatxtActionPerformed
-
-    private void SALIDABTNMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SALIDABTNMouseExited
-        SALIDABTN.setBackground(Color.WHITE);
-        x.setForeground(Color.BLACK);
-    }//GEN-LAST:event_SALIDABTNMouseExited
-
-    private void SALIDABTNMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SALIDABTNMouseEntered
-        SALIDABTN.setBackground(Color.RED);
-        x.setForeground(Color.white);
-    }//GEN-LAST:event_SALIDABTNMouseEntered
-
-    private void SALIDABTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SALIDABTNMouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_SALIDABTNMouseClicked
-
-    private void headMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headMousePressed
-       xmause=evt.getX();
-       ymause=evt.getY();
-    }//GEN-LAST:event_headMousePressed
-
-    private void headMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headMouseDragged
-      int x=evt.getXOnScreen();
-      int y=evt.getYOnScreen();
-        this.setLocation(x-xmause,y-ymause);
-    }//GEN-LAST:event_headMouseDragged
 
     private void usuariotxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuariotxtMouseClicked
        
@@ -283,6 +260,31 @@ usuariotxt.setText("INGRESE SU USUARIO");
                     
         }
     }//GEN-LAST:event_ENTRARBTNMouseClicked
+
+    private void headMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headMousePressed
+        xmause=evt.getX();
+        ymause=evt.getY();
+    }//GEN-LAST:event_headMousePressed
+
+    private void headMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headMouseDragged
+        int x=evt.getXOnScreen();
+        int y=evt.getYOnScreen();
+        this.setLocation(x-xmause,y-ymause);
+    }//GEN-LAST:event_headMouseDragged
+
+    private void SALIDABTNMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SALIDABTNMouseExited
+        SALIDABTN.setBackground(Color.WHITE);
+        x.setForeground(Color.BLACK);
+    }//GEN-LAST:event_SALIDABTNMouseExited
+
+    private void SALIDABTNMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SALIDABTNMouseEntered
+        SALIDABTN.setBackground(Color.RED);
+        x.setForeground(Color.white);
+    }//GEN-LAST:event_SALIDABTNMouseEntered
+
+    private void SALIDABTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SALIDABTNMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_SALIDABTNMouseClicked
 
     /**
      * @param args the command line arguments
@@ -330,6 +332,7 @@ usuariotxt.setText("INGRESE SU USUARIO");
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
