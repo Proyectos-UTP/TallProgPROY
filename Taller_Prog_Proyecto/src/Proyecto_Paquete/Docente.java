@@ -27,5 +27,9 @@ public class Docente {
         this.usuario = usuario;
         this.contraseña = contraseña;
     }
+    
+    public String cred_usuario() {
+        return this.usuario;
+    }
 }
 

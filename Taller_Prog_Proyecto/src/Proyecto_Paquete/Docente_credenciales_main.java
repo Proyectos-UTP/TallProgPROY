@@ -14,7 +14,7 @@ public class Docente_credenciales_main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        String as = "a";
     }
     
 }

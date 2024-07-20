@@ -12,11 +12,7 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class login extends javax.swing.JFrame {
-    Docente docente1 = new Docente("admin1", "admin1");
-    Docente docente2 = new Docente("admin2", "admin2");
-    Docente docente3 = new Docente("admin3", "admin3");
-    Docente docente4 = new Docente("admin4", "admin4");
-    Docente docente5 = new Docente("admin5", "admin5");
+
      
 int xmause,ymause;
 
@@ -255,37 +251,14 @@ usuariotxt.setText("INGRESE SU USUARIO");
     }//GEN-LAST:event_contraseñatxtMousePressed
  
     private void ENTRARBTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ENTRARBTNMouseClicked
-
-        do {
+        String Usuario="Juan José Saelices";
+        String Contraseña="123456789";
         String Pass=new String(contraseñatxt.getPassword());
-        
-        
-        
-        if(usuariotxt.getText().equals(docente1.getUsuario())&& Pass.equals(docente1.getContraseña())){
-            cursos1 curso1 =new cursos1();
-            curso1.setVisible(true);
-            
-        }
-        else if(usuariotxt.getText().equals(docente2.getUsuario())&& Pass.equals(docente2.getContraseña())){
-            cursos1 curso2 =new cursos1();
-            curso2.setVisible(true);
-        }
-        else if(usuariotxt.getText().equals(docente3.getUsuario())&& Pass.equals(docente3.getContraseña())){
-            cursos1 curso3 =new cursos1();
-            curso3.setVisible(true);
-        }
-        else if(usuariotxt.getText().equals(docente4.getUsuario())&& Pass.equals(docente4.getContraseña())){
-            cursos1 curso4 =new cursos1();
-            curso4.setVisible(true);
-        }
-        else if(usuariotxt.getText().equals(docente5.getUsuario())&& Pass.equals(docente5.getContraseña())){
-            cursos1 curso5 =new cursos1();
-            curso5.setVisible(true);
-            
-        
-            
+        if(usuariotxt.getText().equals(Usuario)&& Pass.equals(Contraseña)){
+            cursos_1 ap=new cursos_1();
+            ap.setVisible(true);
             dispose();;
-        }/*else  if(Pass.equals("********")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");}
+        /*else  if(Pass.equals("********")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");}
        if(Pass.equals("********")&& usuariotxt.getText().equals("")){JOptionPane.showMessageDialog(this, "ingrese datos ");} 
        if(Pass.equals("")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");}
        else if(Pass.equals("")&& usuariotxt.getText().equals("INGRESE SU USUARIO")){JOptionPane.showMessageDialog(this, "ingrese datos ");{
