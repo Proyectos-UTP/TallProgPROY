@@ -158,7 +158,7 @@ int xmause,ymause;
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel4.setText("Quimica (22141)");
+        jLabel4.setText("Ciencias (22141)");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -167,14 +167,14 @@ int xmause,ymause;
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(75, 75, 75)
                 .addComponent(jLabel4)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addComponent(jLabel4)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 348, -1));
