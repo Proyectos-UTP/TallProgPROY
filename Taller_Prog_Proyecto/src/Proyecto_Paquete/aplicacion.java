@@ -48,7 +48,7 @@ public class aplicacion extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("SELECCIONE EL CURSO A CALIFICAR");
+        jLabel1.setText("SELECCIONE PORFIS");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(170, 30, 610, 70);
 
