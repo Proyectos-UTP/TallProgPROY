@@ -61,18 +61,18 @@ int xmause,ymause;
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("CONTRASEÑA");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 150, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 150, 30));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("INICIAR SESION");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 190, 40));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 190, 40));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("USUARIO");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 100, 40));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 100, 40));
 
         usuariotxt.setBackground(new java.awt.Color(170, 14, 40));
         usuariotxt.setForeground(new java.awt.Color(255, 255, 255));
@@ -91,9 +91,9 @@ int xmause,ymause;
                 usuariotxtActionPerformed(evt);
             }
         });
-        jPanel1.add(usuariotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 180, 20));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 230, 10));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 230, 10));
+        jPanel1.add(usuariotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 180, 20));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 430, 230, 10));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 230, 10));
 
         contraseñatxt.setBackground(new java.awt.Color(153, 0, 0));
         contraseñatxt.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,9 +110,9 @@ int xmause,ymause;
                 contraseñatxtActionPerformed(evt);
             }
         });
-        jPanel1.add(contraseñatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 150, -1));
+        jPanel1.add(contraseñatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, 150, -1));
 
-        ENTRARBTN.setBackground(new java.awt.Color(153, 0, 0));
+        ENTRARBTN.setBackground(new java.awt.Color(155, 20, 27));
         ENTRARBTN.setForeground(new java.awt.Color(102, 102, 255));
         ENTRARBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ENTRARBTN.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -146,7 +146,7 @@ int xmause,ymause;
 
         jPanel1.add(ENTRARBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 120, 50));
 
-        head.setBackground(new java.awt.Color(204, 0, 51));
+        head.setBackground(new java.awt.Color(214, 0, 0));
         head.setForeground(new java.awt.Color(153, 0, 0));
         head.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -159,7 +159,7 @@ int xmause,ymause;
             }
         });
 
-        SALIDABTN.setBackground(new java.awt.Color(204, 0, 0));
+        SALIDABTN.setBackground(new java.awt.Color(214, 0, 0));
         SALIDABTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SALIDABTNMouseClicked(evt);
