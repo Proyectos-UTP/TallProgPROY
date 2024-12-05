@@ -2,7 +2,7 @@
 package Proyecto_Paquete;
 public class Alumno {
     
-    /* Atribuos */
+    /* Atribuos */tdsds/*
     private String nombre;
     private String apellido;
     private String seccion;
